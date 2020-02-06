@@ -1,0 +1,65 @@
+# Dependencies #
+################
+node_modules/
+
+# Build directories #
+#####################
+.sass-cache
+
+# IDEs #
+########
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+.idea/
+.idea_modules/
+*.ipr
+*.iws
+*.iml
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+*.sublime-workspace
+*.code-workspace
+.vscode
+
+# VCS #
+#######
+.svn
+.cvs
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+/logs
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+*.bak
+*.swp
+*.orig

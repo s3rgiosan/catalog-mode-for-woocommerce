@@ -1,0 +1,27 @@
+{
+  "name": "catalog-mode-for-woocommerce",
+  "version": "1.0.0",
+  "description": "",
+  "license": "See license in LICENSE",
+  "repository": "git@github.com:s3rgiosan/catalog-mode-for-woocommerce.git",
+  "authors": [
+    {
+      "name": "Sérgio Santos",
+      "email": "me@s3rgiosan.com",
+      "homepage": "https://s3rgiosan.com"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-checktextdomain": "^1.0.1",
+    "grunt-composer": "^0.4.5",
+    "grunt-wp-i18n": "^1.0.0",
+    "grunt-wp-readme-to-markdown": "^2.0.1",
+    "jit-grunt": "^0.10.0",
+    "load-grunt-config": "^0.19.2"
+  },
+  "dependencies": {},
+  "eslintConfig": {
+    "extends": "eslint:recommended"
+  }
+}
