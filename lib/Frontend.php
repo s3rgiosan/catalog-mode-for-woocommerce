@@ -49,6 +49,8 @@ class Frontend {
 
 		\add_filter( 'woocommerce_loop_add_to_cart_link', '__return_empty_string', 10 );
 		\add_filter( 'woocommerce_is_purchasable', '__return_false' );
+
+		\add_filter( 'woocommerce_structured_data_type_for_page', [ $this, 'remove_product_structured_data' ], 10, 2 );
 	}
 
 	/**
@@ -76,5 +78,26 @@ class Frontend {
 			\wp_safe_redirect( \home_url() );
 			exit;
 		}
+	}
+
+	/**
+	 * Remove all product structured data.
+	 *
+	 * @param  array $types Page data types.
+	 * @return array
+	 */
+	public function remove_product_structured_data( $types ) {
+
+		if ( empty( $types ) ) {
+			return $types;
+		}
+
+		$index = array_search( 'product', $types, true );
+
+		if ( $index !== false ) {
+			unset( $types[ $index ] );
+		}
+
+		return $types;
 	}
 }

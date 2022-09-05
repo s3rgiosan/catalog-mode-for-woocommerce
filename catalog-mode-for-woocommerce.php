@@ -4,7 +4,7 @@
  * Plugin Name:          Catalog Mode for WooCommerce
  * Plugin URI:           https://github.com/s3rgiosan/catalog-mode-for-woocommerce/
  * Description:          Easily switch your WooCommerce store into catalog mode.
- * Version:              1.0.0
+ * Version:              1.1.0
  * Author:               Sérgio Santos
  * Author URI:           https://s3rgiosan.com/
  * License:              GPL-2.0+
@@ -36,7 +36,7 @@ define( 'WOOCOMMERCECATALOGMODE_PLUGIN_FILE', \plugin_basename( __FILE__ ) );
 \add_action(
 	'plugins_loaded',
 	function () {
-		$plugin = new s3rgiosan\WP\Plugin\WooCommerceCatalogMode\Plugin( 'catalog-mode-for-woocommerce', '1.0.0' );
+		$plugin = new s3rgiosan\WP\Plugin\WooCommerceCatalogMode\Plugin( 'catalog-mode-for-woocommerce', '1.1.0' );
 		$plugin->run();
 	}
 );
